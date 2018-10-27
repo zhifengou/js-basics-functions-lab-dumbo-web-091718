@@ -29,7 +29,7 @@ function distanceTravelledInFeet(loc1,loc2){
   return distance;
 }
 
-function calculatesFarePrice(start, destination) {
+function calculatesFarePrice(loc1, loc2) {
   distance = distanceTravelledInFeet(loc1, loc2)
   if (distance < 400) {
     return 0;
