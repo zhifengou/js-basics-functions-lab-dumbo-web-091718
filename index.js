@@ -25,6 +25,6 @@ function distanceFromHqInFeet(location){
 }
 function distanceTravelledInFeet(loc1,loc2){
   let distance;
-  loc2>loc1?(loc2-loc1)*264:(loc1-loc2)*264;
+  loc2>=loc1?(loc2-loc1)*264:(loc1-loc2)*264;
   return distance;
 }
