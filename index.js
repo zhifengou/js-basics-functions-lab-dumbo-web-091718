@@ -28,15 +28,3 @@ function distanceTravelledInFeet(loc1,loc2){
   loc2>loc1?(loc2-loc1)*264:(loc1-loc2)*264;
   return distance;
 }
-function calculatesFarePrice(start,destination){
- let distance = distanceTravelledInFeet(start, destination);
-   if (distance <= 400) {
-    return 0;
-  } else if (distance > 400 && distance <= 2000) {
-    return 0.02 * (distance - 400);
-  } else if (distance > 2000 && distance < 2500) {
-    return 25;
-  } else {
-    return 'cannot travel that far';
-  }
-}
