@@ -28,3 +28,4 @@ function distanceTravelledInFeet(loc1,loc2){
   loc2>=loc1?(loc2-loc1)*264:(loc1-loc2)*264;
   return distance;
 }
+
